@@ -1,0 +1,40 @@
+.list {
+    min-height: 320px;
+    max-height: 513px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .remove-checked {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: 0.1s background ease-in;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .remove-checked:hover {
+    background-color: #ff6347;
+  }
+  
+  /* 반응형 디자인을 위한 미디어 쿼리 추가 */
+  @media (max-width: 768px) {
+    .list {
+      min-height: 200px;
+      max-height: 400px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .list {
+      min-height: 150px;
+      max-height: 300px;
+    }
+  }
+  
+  

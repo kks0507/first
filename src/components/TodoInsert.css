@@ -1,0 +1,92 @@
+.insert {
+    display: flex;
+    background-color: #495057;
+    margin-bottom: 10px;
+  }
+  
+  .insert input {
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    background: none;
+    color: white;
+    flex: 1;
+  }
+  
+  .insert input::placeholder {
+    color: #dee2e6;
+  }
+  
+  .insert button {
+    background-color: #868e96;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s background ease-in;
+  }
+  
+  .insert button:hover {
+    background-color: #adb5bd;
+  }
+  
+  .toggle-all {
+    background-color: #6c757d;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s background ease-in;
+  }
+  
+  .toggle-all:hover {
+    background-color: #adb5bd;
+  }
+  
+  /* 반응형 디자인을 위한 미디어 쿼리 추가 */
+  @media (max-width: 768px) {
+    .insert {
+      flex-direction: column;
+    }
+  
+    .insert input,
+    .insert button,
+    .toggle-all {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    .insert button,
+    .toggle-all {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .insert input {
+      font-size: 1rem;
+      padding: 0.25rem;
+    }
+  
+    .insert button,
+    .toggle-all {
+      padding: 0.25rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  
+  
