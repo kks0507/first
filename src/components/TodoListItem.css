@@ -1,0 +1,68 @@
+.item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item .checkbox {
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .item .checkbox svg {
+    font-size: 1.5rem;
+  }
+  
+  .item .checkbox .text {
+    margin-left: 0.5rem;
+    flex: 1;
+  }
+  
+  .item .remove {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    cursor: pointer;
+  }
+  
+  .item .remove:hover {
+    color: #ff8787;
+  }
+  
+  .item:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  /* 할일이 체크되었을 때 적용할 스타일 */
+  .item .checkbox.checked svg {
+    font-size: 1.5rem;
+  }
+  
+  .item .checkbox.checked .text {
+    color: #adb5bd;
+    text-decoration: line-through;
+  }
+  
+  /* 반응형 디자인을 위한 미디어 쿼리 추가 */
+  @media (max-width: 768px) {
+    .item {
+      padding: 0.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item .remove {
+      align-self: flex-end;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .item .checkbox svg,
+    .item .remove {
+      font-size: 1.25rem;
+    }
+  }
+  
